@@ -18,6 +18,7 @@
     <modules>
         <module>renren-common</module>
         <module>renren-admin</module>
+        <module>rapid-admin</module>
         <module>renren-api</module>
 		<module>renren-dynamic-datasource</module>
         <module>renren-generator</module>
