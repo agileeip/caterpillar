@@ -1,13 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>io.renren</groupId>
-    <artifactId>renren-security</artifactId>
+    <groupId>org.caterpillar</groupId>
+    <artifactId>caterpillar-rapid</artifactId>
     <version>4.0.0</version>
     <packaging>pom</packaging>
 
     <name>caterpillar</name>
-    <url>https://www.renren.io</url>
+    <url></url>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -16,12 +16,11 @@
 	</parent>
 
     <modules>
-        <module>renren-common</module>
-        <module>renren-admin</module>
+        <module>rapid-common</module>
         <module>rapid-admin</module>
-        <module>renren-api</module>
-		<module>renren-dynamic-datasource</module>
-        <module>renren-generator</module>
+        <module>rapid-api</module>
+		<module>rapid-dynamic-datasource</module>
+        <module>rapid-generator</module>
     </modules>
 
     <properties>
