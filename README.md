@@ -75,7 +75,7 @@ caterpillar-rapid
 <br>
 
  **软件需求** 
-- JDK1.8
+- JDK1.8(OpenJDK is recommend)
 - MySQL5.5+
 - Maven3.0+
 
