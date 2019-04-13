@@ -1,7 +1,8 @@
 
 
 **项目说明** 
-- 采用SpringBoot、MyBatis、Shiro框架，开发的一套权限系统，极低门槛，拿来即用。设计之初，就非常注重安全性，为企业系统保驾护航，让一切都变得如此简单。
+- 采用SpringBoot、MyBatis、Shiro框架，开发的一套权限系统，极低门槛，拿来即用。
+设计之初，就非常注重安全性，为企业系统保驾护航，让一切都变得如此简单。
 - 提供了代码生成器，只需编写30%左右代码，其余的代码交给系统自动生成，可快速完成开发任务
 - 支持MySQL、Oracle、SQL Server、PostgreSQL等主流数据库
 <br>
@@ -27,10 +28,10 @@
 
 **项目结构** 
 ```
-renren-security
-├─renren-common     公共模块
+caterpillar-rapid
+├─rapid-common     公共模块
 │ 
-├─renren-admin      管理后台
+├─rapid-admin      管理后台
 │    ├─db  数据库SQL脚本
 │    │ 
 │    ├─modules  模块
@@ -48,9 +49,9 @@ renren-security
 │        └─application.yml   全局配置文件
 │       
 │ 
-├─renren-api        API服务
+├─rapid-api        API服务
 │ 
-├─renren-generator  代码生成器
+├─rapid-generator  代码生成器
 │        └─resources 
 │           ├─mapper   MyBatis文件
 │           ├─template 代码生成器模板（可增加或修改相应模板）
@@ -83,35 +84,26 @@ renren-security
  **本地部署**
 - 通过git下载源码
 - idea、eclipse需安装lombok插件，不然会提示找不到entity的get set方法
-- 创建数据库renren_security，数据库编码为UTF-8
+- 创建数据库caterpillar，数据库编码为UTF-8
 - 执行db/mysql.sql文件，初始化数据【按需导入表结构及数据】
 - 修改application-dev.yml文件，更新MySQL账号和密码
-- 在renren-security目录下，执行mvn clean install
+- 在rcaterpillar目录下，执行mvn clean install
 <br>
 
-- Eclipse、IDEA运行AdminApplication.java，则可启动项目【renren-admin】
-- renren-admin访问路径：http://localhost:8080/renren-admin
-- swagger文档路径：http://localhost:8080/renren-admin/swagger/index.html
-- swagger注解路径：http://localhost:8080/renren-admin/swagger-ui.html
+- Eclipse、IDEA运行AdminApplication.java，则可启动项目【rapid-admin】
+- rapid-admin访问路径：http://localhost:8080/rapid-admin
+- swagger文档路径：http://localhost:8080/rapid-admin/swagger/index.html
+- swagger注解路径：http://localhost:8080/rapid-admin/swagger-ui.html
 - 账号密码：admin/admin
 
 <br>
 
-- Eclipse、IDEA运行ApiApplication.java，则可启动项目【renren-api】
-- renren-api访问路径：http://localhost:8081/renren-api/swagger-ui.html
+- Eclipse、IDEA运行ApiApplication.java，则可启动项目【rapid-api】
+- rapid-api访问路径：http://localhost:8081/rapid-api/swagger-ui.html
 
 <br>
 
-- Eclipse、IDEA运行GeneratorApplication.java，则可启动项目【renren-generator】
-- renren-generator访问路径：http://localhost:8082/renren-generator
+- Eclipse、IDEA运行GeneratorApplication.java，则可启动项目【rapid-generator】
+- rapid-generator访问路径：http://localhost:8082/rapid-generator
 
-
-<br>
-
- **集群部署**
-- 集群部署，需要安装redis，并配置redis信息
-- 需要配置【renren.redis.open=true】，表示开启redis缓存
-- 需要配置【renren.cluster=true】，表示开启集群环境
-
-<br>
 
