@@ -3,8 +3,8 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3305/renren_security?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
-      username: renren
+      url: jdbc:mysql://localhost:3305/caterpillar?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: caterpillar
       password: 123456
       initial-size: 10
       max-active: 100
