@@ -1,4 +1,4 @@
-
+Caterpillar rapid development
 
 **项目说明** 
 - 采用SpringBoot、MyBatis、Shiro框架，开发的一套权限系统，极低门槛，拿来即用。
@@ -105,5 +105,18 @@ caterpillar-rapid
 
 - Eclipse、IDEA运行GeneratorApplication.java，则可启动项目【rapid-generator】
 - rapid-generator访问路径：http://localhost:8082/rapid-generator
+
+
+the first version base on renren.
+
+**参考资源**
+
+- vue-element-admin
+- jeecg-boot
+- SpringBlade
+- jeesite4
+- renren-fast-vue
+- renren-fast
+- renren-security
 
 
