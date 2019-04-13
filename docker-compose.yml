@@ -1,13 +1,13 @@
 version: '2'
 services:
-  renren-admin:
-    image: renren/admin
+  rapid-admin:
+    image: caterpillar/admin
     ports:
       - "8080:8080"
     environment:
       - spring.profiles.active=dev
-  renren-api:
-    image: renren/api
+  rapid-api:
+    image: caterpillar/api
     ports:
       - "8081:8081"
     environment:
