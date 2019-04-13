@@ -21,8 +21,8 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>io.renren</groupId>
-			<artifactId>renren-common</artifactId>
+			<groupId>org.caterpillar</groupId>
+			<artifactId>rapid-common</artifactId>
 			<version>4.0.0</version>
 		</dependency>
 		<!-- 集群环境，需要打开注释 -->
@@ -96,8 +96,8 @@
 			</exclusions>
 		</dependency>
         <dependency>
-            <groupId>io.renren</groupId>
-            <artifactId>renren-dynamic-datasource</artifactId>
+            <groupId>org.caterpillar</groupId>
+            <artifactId>rapid-dynamic-datasource</artifactId>
             <version>4.0.0</version>
             <scope>test</scope>
         </dependency>
@@ -123,7 +123,7 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.4.14</version>
 				<configuration>
-					<imageName>renren/admin</imageName>
+					<imageName>caterpillar/admin</imageName>
 					<dockerDirectory>${project.basedir}</dockerDirectory>
 					<resources>
 						<resource>
